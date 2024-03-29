@@ -15,7 +15,7 @@ body {
   margin-inline: auto;
 }
 
-h1, h2, p, li, span, input {
+h1, h2, h3, p, li, span, input {
   font-family: 'Merriweather', serif;
   color: #fff;
 }
@@ -60,6 +60,7 @@ p {
 }
 
 form {
+  position: relative;
   justify-content: center;
   margin-bottom: 60px;
 }
@@ -96,7 +97,59 @@ input[type="button"]:hover {
   background-color: #214cce;
 }
 
-.search-display {
-  height: 360px;
-  width: 1000px;
+.dropdown-content {
+  display: none;
+  margin-top: 2px;
+  border-radius: 5px;
+  position: absolute;
+  top: 45px;
+  left: 210px;
+  background-color: rgb(31 30 38);
+  border: 1px solid rgb(245 245 245 / 0.05);
+  width: 360px;
+  z-index: 9;
+}
+
+.dropdown-content li {
+  color: #fff;
+  padding: 12px 20px;
+  display: block;
+  cursor: pointer;
+}
+
+.dropdown-content li:hover {
+  background-color: rgb(29 28 36);
+}
+
+.movie-poster {
+  width: 240px;
+  height: 300px;
+  margin-right: 25px;
+  border-radius: 5px;
+}
+
+.movie-description {
+  width: 660px;
+  height: 300px;
+}
+
+h3 {
+  font-size: 22px;
+  padding-bottom: 5px;
+}
+
+.movie-release-date {
+  padding-right: 10px;
+}
+
+.movie-genre {
+  margin-right: 10px;
+  text-align: center;
+  font-weight: 600;
+  width: 60px;
+  height: 30px;
+  border-radius: 30px;
+  color: #fff;
+  background-color: #afb7ad;
+  border: 1px solid rgb(255 255 255 / 0.05);
 }

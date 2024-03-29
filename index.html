@@ -25,9 +25,37 @@
           <form class="flex">
             <input type="text" class="search-box" placeholder="Search"
             maxlength="30">
+            <div class="dropdown-content">
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
             <input type="button" class="button" value="find movie">
           </form>
-          <div class="search-display"></div>
+          <div class="search-display flex">
+            <div class="movie-poster"></div>
+            <div class="movie-description">
+              <h3>This is movie title</h3>
+              <div class="flex movie-time">
+                <p class="movie-release-date">1999</p>
+                <p class="movie-runtime">2h 18m</p>
+              </div>
+              <p class="movie-writeup">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Eaque assumenda expedita iste excepturi dicta cum veritatis 
+                laboriosam consectetur totam neque sunt molestiae asperiores, 
+                repellendus voluptatum quidem illo aliquid, maxime facilis?
+              </p>
+              <div class="movie-genre-section flex">
+                <div class="movie-genre">Action</div>
+                <div class="movie-genre">Sci-Fi</div>
+              </div>
+            </div>
+          </div>
         </section>
       </div>
     </main>
