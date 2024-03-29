@@ -6,20 +6,29 @@
     <meta name="author" content="Ejike-Nweze Olisa M.">
     <meta name="description" content="Movie X">
     <meta name="keywords" content="html, css, web, web development, javascript">
-    <title>Movie X</title>
+    <title>moviex</title>
     <link rel="icon" href="./assets/img/favicon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mrspecht/cdn/reset.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Source+Code+Pro:wght@200&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap">
     <link rel="stylesheet" href="./assets/css/index.css">
     <script src="./assets/js/app.js" type="module"></script>
   </head>
   <body>
     <main>
-      <div class="container">
-
+      <div class="container grid center movies-display">
+        <section class="movies-search">
+          <h2>movie<span>x</span></h2>
+          <p>Your favorite movies are here</p>
+          <form class="flex">
+            <input type="text" class="search-box" placeholder="Search"
+            maxlength="30">
+            <input type="button" class="button" value="find movie">
+          </form>
+          <div class="search-display"></div>
+        </section>
       </div>
     </main>
   </body>

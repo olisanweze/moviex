@@ -15,7 +15,88 @@ body {
   margin-inline: auto;
 }
 
+h1, h2, p, li, span, input {
+  font-family: 'Merriweather', serif;
+  color: #fff;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.center {
+  place-items: center;
+}
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /*  Component                                            */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+main {
+  height: 100dvh;
+}
+
+.movies-display {
+  height: 100%;
+}
+
+h2 {
+  font-size: 40px;
+  text-align: center;
+}
+
+h2 span {
+  color: #214cce;
+}
+
+p {
+  text-align: center;
+  color: rgb(255 255 255 / 0.5);
+  margin-bottom: 25px;
+}
+
+form {
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+input {
+  border-radius: 5px;
+  height: 44px;
+  line-height: 44px;
+  font-size: 15px;
+  color: #fff;
+}
+
+input[type="text"] {
+  width: 360px;
+  background-color: rgb(29 28 36);
+  padding: 0 15px;
+  border: 1px solid rgb(255 255 255 / 0.05);
+}
+
+input[type="text"]:focus {
+  border: 1px solid rgb(255 255 255 / 0.15);
+}
+
+input[type="button"] {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  width: 130px;
+  background-color: #2b58de;
+  margin-left: 15px;
+}
+
+input[type="button"]:hover {
+  background-color: #214cce;
+}
+
+.search-display {
+  height: 360px;
+  width: 1000px;
+}
