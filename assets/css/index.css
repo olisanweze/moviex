@@ -1,6 +1,6 @@
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*========================================================*/
 /*  App                                                  */
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*=======================================================*/
 
 :root {
   --background-dark: rgb(24, 23, 31);
@@ -32,9 +32,9 @@ h1, h2, h3, p, li, span, input {
   place-items: center;
 }
 
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*=======================================================*/
 /*  Component                                            */
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*=======================================================*/
 
 main {
   height: 100dvh;
@@ -112,13 +112,17 @@ input[type="button"]:hover {
 
 .dropdown-content li {
   color: #fff;
-  padding: 12px 20px;
+  padding: 12px 15px;
   display: block;
-  cursor: pointer;
 }
 
 .dropdown-content li:hover {
   background-color: rgb(29 28 36);
+}
+
+.search-display {
+  position: relative;
+  left: -50px;
 }
 
 .movie-poster {
@@ -126,11 +130,26 @@ input[type="button"]:hover {
   height: 300px;
   margin-right: 25px;
   border-radius: 5px;
+  background-size: cover;
+}
+
+.movie-writeup {
+  text-align: left;
 }
 
 .movie-description {
   width: 660px;
   height: 300px;
+}
+
+.green {
+  display: none;
+  content: "";
+  width: 7px;
+  height: 7px;
+  margin-top: 10px;
+  background-color: #00ff00;
+  border-radius: 50%;
 }
 
 h3 {
@@ -142,14 +161,32 @@ h3 {
   padding-right: 10px;
 }
 
+.movie-runtime {
+  padding-left: 10px;
+}
+
 .movie-genre {
   margin-right: 10px;
   text-align: center;
-  font-weight: 600;
-  width: 60px;
-  height: 30px;
+  font-weight: 500;
+  font-size: 14px;
+  width: 100px;
+  height: 35px;
+  line-height: 35px;
   border-radius: 30px;
   color: #fff;
-  background-color: #afb7ad;
+  background-color: rgb(86 94 88 / 0.4);
   border: 1px solid rgb(255 255 255 / 0.05);
+}
+
+.show {
+  display: block;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.show-seperate {
+  display: inline-block; 
 }
