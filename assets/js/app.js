@@ -99,6 +99,8 @@ function getMovieDescription() {
     getMovieGenre(selectedMovie);
     seperator.classList.add('show-seperate'); 
   }
+
+  search.value = '';
 }
 
 /*=======================================================*/
