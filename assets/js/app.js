@@ -15,6 +15,7 @@ import movies from './movies.js';
 /*=======================================================*/
 
 const search = select('.search-box');
+const main = select('main');
 const findButton = select('.button');
 const dropdown = select('.dropdown-content');
 const suggestionsList = select('.dropdown-content ul');
@@ -101,6 +102,7 @@ function getMovieDescription() {
   }
 
   search.value = '';
+  main.classList.add('scroll');
 }
 
 /*=======================================================*/

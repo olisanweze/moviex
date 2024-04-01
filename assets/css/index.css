@@ -14,7 +14,6 @@ body::after {
   position: absolute;
   inset: 0 auto auto 0;
   width: 100%;
-  min-height: 100%;
   content: '';
   background-color: rgb(20 19 25 / 70%);
   z-index: -1111;
@@ -48,6 +47,7 @@ h1, h2, h3, p, li, span, input {
 
 main {
   height: 100dvh;
+  overflow: hidden;
 }
 
 .movies-display {
@@ -198,6 +198,75 @@ h3 {
   cursor: pointer;
 }
 
+.scroll {
+  overflow: scroll;
+}
+
 .show-seperate {
   display: inline-block; 
+}
+
+/*=======================================*/
+/*            media queries              */
+/*=======================================*/
+
+/* 1200px and down */
+
+@media (max-width: 1200px) {
+  h2 {
+    margin-top: 20px;
+  }
+ 
+  .search-display {
+    left: 0;
+  }
+}
+
+/* 920px and down */
+
+@media (max-width: 920px) {
+  form {
+    margin-bottom: 35px;
+  }
+
+  .dropdown-content {
+    left: 110px;
+  }
+
+  .movie-poster {
+    width: 200px;
+  }
+
+  .movie-description {
+    width: 500px;
+  }
+}
+
+/* 480px and down */
+
+@media (max-width: 480px) {
+  input[type="text"], .dropdown-content {
+    width: 200px;
+  }
+
+  .dropdown-content {
+    left: 0;
+  }
+
+  .button {
+    width: 100px;
+  }
+
+  .search-display {
+    display: block;
+  }
+
+  .movie-poster {
+    margin: 0 0 25px;
+    width: 100%;
+  }
+
+  .movie-description {
+    width: 100%;
+  }
 }
