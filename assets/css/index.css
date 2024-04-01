@@ -199,7 +199,7 @@ h3 {
 }
 
 .scroll {
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 .show-seperate {
@@ -264,6 +264,7 @@ h3 {
   .movie-poster {
     margin: 0 0 25px;
     width: 100%;
+    height: 400px;
   }
 
   .movie-description {
